@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "pergunta": "O que é o desafio ChargeGrid Intelligence da GoodWe?",
+        "resposta": "O **ChargeGrid Intelligence** é a solução de ecossistema de carregamento da GoodWe, projetada para integrar a infraestrutura de recarga de veículos elétricos (EV) com a geração solar fotovoltaica e o armazenamento de energia.\n\nO objetivo central desta inteligência é a **otimização do fluxo energético**. Em vez de apenas fornecer energia da rede elétrica para o veículo, o sistema busca priorizar o uso de energia limpa gerada localmente (autoconsumo), reduzindo a dependência da concessionária e diminuindo os custos operacionais.\n\nPara a linha de carregadores **HCA G2** (modelos de 7kW, 11kW e 22kW), essa inteligência se manifesta através de:\n\n1.  **Integração com Ecossistema GoodWe:** Sincronização com inversores e baterias da marca para gestão eficiente da carga.\n2.  **Monitoramento Centralizado:** Acompanhamento do status de carregamento, consumo de energia e saúde do equipamento via plataforma **SEMS+** e aplicativo **SolarGo**.\n3.  **Eficiência Energética:** Gestão inteligente para evitar sobrecargas no ponto de conexão e maximizar o aproveitamento da energia solar disponível no momento da recarga.\n\n**Nota Técnica:** É importante ressaltar que, embora o sistema seja inteligente na gestão energética e monitoramento, a linha HCA G2 não possui suporte a protocolo OCPP nem APIs abertas para integrações de cobrança de terceiros.",
+        "latencia_segundos": 1.87,
+        "tokens_input": 14,
+        "tokens_output": 358,
+        "status": "SUCESSO"
+    },
+    {
+        "id": 2,
+        "pergunta": "Quais são os modelos disponíveis na linha HCA G2?",
+        "resposta": "A linha de carregadores veiculares GoodWe HCA G2 é composta pelos seguintes modelos:\n\n*   **GW7K-HCA-20**: Potência de 7kW, alimentação Monofásica.\n*   **GW11K-HCA-20**: Potência de 11kW, alimentação Trifásica.\n*   **GW22K-HCA-20**: Potência de 22kW, alimentação Trifásica.\n\nTodos os modelos contam com grau de proteção IP66 e garantia de 2 anos.",
+        "latencia_segundos": 0.89,
+        "tokens_input": 14,
+        "tokens_output": 122,
+        "status": "SUCESSO"
+    },
+    {
+        "id": 3,
+        "pergunta": "A linha HCA G2 possui suporte ao protocolo OCPP para cobranças?",
+        "resposta": "Não, a linha HCA G2 (modelos GW7K-HCA-20, GW11K-HCA-20 e GW22K-HCA-20) **não possui suporte ao protocolo OCPP**, portanto, não permite a integração com plataformas de cobrança de terceiros.\n\nO monitoramento e a gestão desses equipamentos são realizados exclusivamente através do ecossistema GoodWe, via plataforma **SEMS+** e aplicativo **SolarGo**.",
+        "latencia_segundos": 1.07,
+        "tokens_input": 19,
+        "tokens_output": 108,
+        "status": "SUCESSO"
+    },
+    {
+        "id": 4,
+        "pergunta": "Existe alguma API disponível para integração ou monitoramento?",
+        "resposta": "Não, a linha de carregadores GoodWe HCA G2 não possui API aberta disponível para integrações externas ou monitoramento por terceiros.\n\nO monitoramento e a gestão dos equipamentos são realizados exclusivamente através do ecossistema oficial da marca:\n1. **SEMS Portal** (via navegador).\n2. **Aplicativo SolarGo** (disponível para smartphones).\n\nReforço que estes modelos também não possuem suporte ao protocolo OCPP, limitando a gestão às plataformas proprietárias da GoodWe.",
+        "latencia_segundos": 0.93,
+        "tokens_input": 15,
+        "tokens_output": 121,
+        "status": "SUCESSO"
+    },
+    {
+        "id": 5,
+        "pergunta": "Como funciona o modo Controle Dinâmico de Carga?",
+        "resposta": "O **Controle Dinâmico de Carga (DLM - Dynamic Load Management)** da linha GoodWe HCA G2 é um recurso de gestão inteligente de energia projetado para evitar a sobrecarga da instalação elétrica do cliente.\n\nTecnicamente, o funcionamento ocorre da seguinte forma:\n\n**1. Monitoramento em Tempo Real**\nO sistema utiliza um medidor de energia (Smart Meter) instalado no ponto de entrada da instalação. Este medidor monitora constantemente a potência total que está sendo consumida pela residência ou empresa.\n\n**2. Priorização de Cargas**\nO carregador é configurado para operar como a carga de menor prioridade. O sistema define um limite máximo de potência para a instalação (capacidade do disjuntor geral).\n\n**3. Ajuste Automático de Corrente**\n*   **Cenário A (Baixo Consumo):** Se a casa estiver consumindo pouca energia, o carregador HCA G2 libera a potência máxima configurada (ex: 7kW, 11kW ou 22kW) para o veículo.\n*   **Cenário B (Alto Consumo):** Se aparelhos de alta potência (como ar-condicionado ou chuveiros) forem ligados, o sistema detecta o aumento da demanda e reduz automaticamente a corrente de carga do veículo em tempo real.\n*   **Cenário C (Sobrecarga Iminente):** Caso a demanda da instalação atinja o limite máximo configurado, o carregador pode reduzir a carga ao mínimo permitido ou pausar a recarga temporariamente para evitar o desligamento do disjuntor geral.\n\n**4. Retomada Automática**\nAssim que a demanda da instalação diminui, o sistema redistribui a energia disponível e aumenta a potência de recarga do veículo automaticamente, sem a necessidade de intervenção manual.\n\n**Benefícios Técnicos:**\n*   **Segurança:** Elimina o risco de quedas de energia por sobrecarga.\n*   **Economia:** Evita a necessidade de upgrades dispendiosos na infraestrutura elétrica (aumento de carga junto à concessionária) em casos onde a margem de potência é limitada.\n*   **Eficiência:** Otimiza o uso da energia disponível na instalação.\n\n**Lembrete:** A configuração do DLM deve ser realizada via aplicativo SolarGo/SEMS+ e requer a instalação correta do medidor de energia compatível com o ecossistema GoodWe.",
+        "latencia_segundos": 3.87,
+        "tokens_input": 13,
+        "tokens_output": 590,
+        "status": "SUCESSO"
+    }
+]
